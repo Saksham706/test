@@ -6,8 +6,6 @@ public class ThreeSum {
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         if (nums == null || nums.length < 3) return result;
-
-        // Sort the array to use two-pointer approach and handle duplicates easily
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 2; i++) {
